@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Олимпиада «Математика в экономике» | НЭТК</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Yandex.Metrika -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        ym(99999999, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/99999999" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+</head>
+<body>
+
+<div class="header">
+    <div class="container">
+        <div class="logo-area">
+            <div class="logo-wrapper">
+                <img src="https://static.ucheba.ru/pix/logo_cache/97909.upto100x100.png" alt="Эмблема НЭТК" class="college-logo">
+                <div class="college-name">Нижегородский экономико-технологический колледж</div>
+            </div>
+            <div class="countdown-box" id="countdownTimer">⏳ Загрузка...</div>
+        </div>
+        <div class="olympiad-title">
+            <h1>📐 МАТЕМАТИКА В ЭКОНОМИКЕ 📊</h1>
+            <p>Областная олимпиада для обучающихся 9 классов</p>
+            <div style="margin-top: 25px;">
+                <a href="#registerForm" class="cta-button">🔥 Зарегистрироваться →</a>
+                <a href="#feedback" class="cta-button" style="background:#2c6e9e; margin-left: 15px;">📩 Задать вопрос</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <!-- Секция 1: Олимпиада -->
+    <div class="section">
+        <h2>📌 Об олимпиаде</h2>
+        <p><strong>Цель:</strong> развитие применения математических методов в решении прикладных экономических задач. <br>
+        <strong>Задачи:</strong> формирование экономического мышления, стимулирование интереса к социально-экономическим проблемам, повышение компетенций учителей.</p>
+        <div class="info-grid">
+            <div class="info-card">📅 <strong>Дата проведения:</strong><br> 03 апреля 2027 года</div>
+            <div class="info-card">📍 <strong>Адрес:</strong><br> г. Арзамас, пр-т Ленина, 200</div>
+            <div class="info-card">👥 <strong>Участники:</strong><br> 9 классы, до 5 человек от школы. Бесплатно!</div>
+            <div class="info-card">💻 <strong>Формат:</strong><br> Очный (возможно дистанционно при эпид. ситуации)</div>
+        </div>
+        <div style="margin-top: 20px; background:#eef2ff; padding: 20px; border-radius: 20px;">
+            <p>🎓 <strong>Все участники получают именной сертификат</strong>, победители — дипломы I, II, III степени. Награждение в формате онлайн-конференции.</p>
+        </div>
+    </div>
+
+    <!-- Секция с табами -->
+    <div class="section">
+        <h2>📖 Полезная информация</h2>
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="tab1">📚 Темы заданий</button>
+            <button class="tab-btn" data-tab="tab2">📞 Оргкомитет</button>
+            <button class="tab-btn" data-tab="tab3">🧮 Эконом-калькулятор</button>
+        </div>
+        <div id="tab1" class="tab-content active-content">
+            <p><strong>Темы по математике:</strong> проценты, пропорции, линейные уравнения, функции, статистика, графики.</p>
+            <p><strong>Темы по экономике:</strong> спрос и предложение, издержки, прибыль, инфляция, бюджет семьи, ВВП (базовые понятия).</p>
+            <p>После подтверждения участия вы получите полный список тем для подготовки.</p>
+        </div>
+        <div id="tab2" class="tab-content">
+            <p><strong>Оргкомитет олимпиады «МАТЕМАТИКА В ЭКОНОМИКЕ»:</strong></p>
+            <ul style="margin-left: 20px;">
+                <li>📞 Грачева Ольга Владимировна – 8(83147)71432</li>
+                <li>📱 Мельников Владимир Александрович – +79047853491</li>
+                <li>📱 Низаметдинова Татьяна Ильинична – +79875304362</li>
+            </ul>
+            <p>✉️ Email: labcoop@yandex.ru</p>
+        </div>
+        <div id="tab3" class="tab-content">
+            <div class="calculator">
+                <h3>📊 Калькулятор рентабельности (экономический расчёт)</h3>
+                <label>Выручка (руб.):</label>
+                <input type="number" id="revenue" class="calc-input" placeholder="Например, 50000">
+                <label>Затраты (руб.):</label>
+                <input type="number" id="cost" class="calc-input" placeholder="Например, 30000">
+                <button id="calcProfitBtn" class="cta-button" style="padding:10px 20px;">Рассчитать прибыль и рентабельность</button>
+                <div class="result" id="calcResult">💰 Результат появится здесь</div>
+                <small>Интерактивный пример применения математики в экономике</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Форма заявки -->
+    <div class="section" id="registerForm">
+        <h2>📝 Заявка на участие в олимпиаде</h2>
+        <p>Прием заявок до <strong>01 апреля 2027 года</strong> на e-mail <strong>labcoop@yandex.ru</strong> ИЛИ через форму ниже.</p>
+        <form id="applicationForm" class="feedback-form">
+            <div class="form-group">
+                <input type="text" id="fullname" placeholder="Фамилия, имя, отчество обучающегося" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="class" placeholder="Класс" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="phone" placeholder="Телефон участника" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="emailStudent" placeholder="E-mail участника" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="school" placeholder="Образовательная организация (полное название)" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="teacher" placeholder="ФИО руководителя (преподавателя)" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="teacherPhone" placeholder="Телефон / e-mail руководителя" required>
+            </div>
+            <div class="form-group">
+                <select id="formType" style="padding:14px; border-radius:16px;">
+                    <option value="очная">📌 Очная форма участия</option>
+                    <option value="заочная">📌 Заочная форма участия</option>
+                </select>
+            </div>
+            <button type="submit" class="cta-button">✅ Отправить заявку</button>
+            <p id="formMessage" style="color:green; font-weight:bold;"></p>
+        </form>
+        <p style="margin-top: 15px;">📎 <em>Заявки также принимаются на email: labcoop@yandex.ru (в теме письма "Олимпиада")</em></p>
+    </div>
+
+    <!-- Форма обратной связи -->
+    <div class="section" id="feedback">
+        <h2>📧 Форма обратной связи</h2>
+        <p>Остались вопросы? Напишите нам, и мы поможем!</p>
+        <form id="feedbackFormSimple" class="feedback-form">
+            <div class="form-group">
+                <input type="text" id="fbName" placeholder="Ваше имя" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="fbEmail" placeholder="Ваш E-mail" required>
+            </div>
+            <div class="form-group">
+                <textarea rows="3" id="fbMessage" placeholder="Ваш вопрос олимпиаде «Математика в экономике»" required></textarea>
+            </div>
+            <button type="submit" class="cta-button">✉️ Отправить сообщение</button>
+            <p id="feedbackMsg" style="color:green;"></p>
+        </form>
+    </div>
+
+    <!-- Социальные сети (обновлено: сайт, Telegram, VK, без Одноклассников) -->
+    <div class="section" style="text-align: center;">
+        <h2>📢 Поделиться и следить</h2>
+        <div class="social-links">
+            <a href="https://netk.nnov.ru/" target="_blank" class="social-icon" title="Официальный сайт НЭТК">🌐</a>
+            <a href="https://t.me/netk1957" target="_blank" class="social-icon" title="Telegram НЭТК">📱</a>
+            <a href="https://vk.com/netk_arzamas" target="_blank" class="social-icon" title="ВКонтакте НЭТК">📘</a>
+        </div>
+        <p>Расскажите друзьям об олимпиаде! #МатематикаВЭкономике #НЭТК #ПоступайПрофессионально</p>
+        <div style="font-size:0.8rem; margin-top: 15px;">⭐ Актуальная дата: 03.04.2027 | Приём заявок до 01.04.2027</div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2027 Нижегородский экономико-технологический колледж | Олимпиада «Математика в экономике»</p>
+    <p>г. Арзамас, пр-т Ленина, 200 | Приёмная комиссия: +7 (83147) 7-14-32</p>
+    <p>Сайт является участником конкурса «Я ❤ IT! Веб-разработка»</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
